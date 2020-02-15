@@ -32,4 +32,9 @@ export class CartComponent implements OnInit {
 
     console.warn('Your order has been submitted', custumerData)
   } 
+
+  remove(indexProduct) {
+    this.cartService.removeItemOfArray(indexProduct)
+  }
+
 }

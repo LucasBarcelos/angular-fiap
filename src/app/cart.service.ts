@@ -30,4 +30,7 @@ export class CartService {
     return this.http.get('/assets/shipping.json')
   }
 
+  removeItemOfArray(indexProduct) {
+    this.items.splice(indexProduct, 1)
+  }
 }
